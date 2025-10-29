@@ -1,0 +1,18 @@
+Source: fastrpc
+Maintainer: "Radxa Computer Co., Ltd" <dev@radxa.com>
+Section: admin
+Priority: standard
+Standards-Version: 4.6.0
+Build-Depends: debhelper (>=12~),
+               devscripts,
+               lintian,
+               dh-exec,
+               pandoc,
+
+Package: fastrpc
+Architecture: all
+Section: admin
+Priority: optional
+Depends: ${misc:Depends},
+Description: fastrpc
+ This package provides the fastrpc.
