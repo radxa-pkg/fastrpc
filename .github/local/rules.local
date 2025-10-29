@@ -1,0 +1,7 @@
+override_dh_dwz:
+	:
+
+override_dh_strip:
+	dh_strip --exclude=libcalculator_skel.so \
+			 --exclude=libhap_example_skel.so \
+			 --exclude=libmultithreading_skel.so

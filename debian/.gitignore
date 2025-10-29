@@ -1,8 +1,8 @@
 /.debhelper
 /debhelper-build-stamp
 /files
-/linux-*/
-/u-boot-*/
+/fastrpc*/
+/lib*/
 /*.debhelper.log
 /*.*.debhelper
 /*.substvars

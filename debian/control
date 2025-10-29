@@ -8,11 +8,105 @@ Build-Depends: debhelper (>=12~),
                lintian,
                dh-exec,
                pandoc,
+               crossbuild-essential-arm64 [!arm64],
+               libc6:arm64 [!arm64],
+               libstdc++6:arm64 [!arm64],
 
 Package: fastrpc
+Architecture: any
+Section: admin
+Priority: optional
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Facilitates efficient remote procedure calls - main package
+ This package provides the fastrpc, Qualcomm's userspace library that
+ facilitates efficient remote procedure calls between the CPU and DSP for
+ high-performance computing.
+
+Package: libadsp-default-listener1
+Architecture: any
+Section: admin
+Priority: optional
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Facilitates efficient remote procedure calls - adsp listener
+ This package provides the fastrpc, Qualcomm's userspace library that
+ facilitates efficient remote procedure calls between the CPU and DSP for
+ high-performance computing.
+
+Package: libadsprpc1
+Architecture: any
+Section: admin
+Priority: optional
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Facilitates efficient remote procedure calls - adsp RPC
+ This package provides the fastrpc, Qualcomm's userspace library that
+ facilitates efficient remote procedure calls between the CPU and DSP for
+ high-performance computing.
+
+Package: libcdsp-default-listener1
+Architecture: any
+Section: admin
+Priority: optional
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Facilitates efficient remote procedure calls - cdsp listener
+ This package provides the fastrpc, Qualcomm's userspace library that
+ facilitates efficient remote procedure calls between the CPU and DSP for
+ high-performance computing.
+
+Package: libcdsprpc1
+Architecture: any
+Section: admin
+Priority: optional
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Facilitates efficient remote procedure calls - cdsp RPC
+ This package provides the fastrpc, Qualcomm's userspace library that
+ facilitates efficient remote procedure calls between the CPU and DSP for
+ high-performance computing.
+
+Package: libsdsp-default-listener1
+Architecture: any
+Section: admin
+Priority: optional
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Facilitates efficient remote procedure calls - sdsp listener
+ This package provides the fastrpc, Qualcomm's userspace library that
+ facilitates efficient remote procedure calls between the CPU and DSP for
+ high-performance computing.
+
+Package: libsdsprpc1
+Architecture: any
+Section: admin
+Priority: optional
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Facilitates efficient remote procedure calls - sdsp RPC
+ This package provides the fastrpc, Qualcomm's userspace library that
+ facilitates efficient remote procedure calls between the CPU and DSP for
+ high-performance computing.
+
+Package: fastrpc-dev
+Architecture: any
+Section: admin
+Priority: optional
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Description: Facilitates efficient remote procedure calls - development files
+ This package provides the fastrpc, Qualcomm's userspace library that
+ facilitates efficient remote procedure calls between the CPU and DSP for
+ high-performance computing.
+
+Package: fastrpc-firmware
 Architecture: all
 Section: admin
 Priority: optional
 Depends: ${misc:Depends},
-Description: fastrpc
- This package provides the fastrpc.
+         ${shlibs:Depends},
+Description: Facilitates efficient remote procedure calls - firmware files
+ This package provides the fastrpc, Qualcomm's userspace library that
+ facilitates efficient remote procedure calls between the CPU and DSP for
+ high-performance computing.

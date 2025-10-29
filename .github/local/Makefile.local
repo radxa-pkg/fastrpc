@@ -1,0 +1,20 @@
+main_build: build-fastrpc
+
+src/Makefile:
+	cd src && GITCOMPILE_NO_MAKE=1 ./gitcompile --prefix=/usr --host=aarch64-linux-gnu
+
+.PHONY: build-fastrpc
+build-fastrpc: src/Makefile
+	cd src && $(MAKE)
+	mkdir -p src/m4/build
+	cd src && $(MAKE) DESTDIR=$(shell realpath ./src/m4/build) install
+	mkdir -p src/m4/dev/usr/lib
+	rm src/m4/build/usr/lib/*.la 
+	mv src/m4/build/usr/lib/*.so src/m4/dev/usr/lib
+
+clean: clean-fastrpc
+
+.PHONY: clean-fastrpc
+clean-fastrpc: src/Makefile
+	cd src && $(MAKE) distclean
+	rm -rf src/m4/build src/m4/dev

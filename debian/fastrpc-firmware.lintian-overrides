@@ -1,0 +1,6 @@
+# This package includes DSP firmwares
+fastrpc-firmware: arch-dependent-file-in-usr-share
+fastrpc-firmware: arch-independent-package-contains-binary-or-object
+fastrpc-firmware: library-not-linked-against-libc
+fastrpc-firmware: shared-library-lacks-stack-section
+fastrpc-firmware: undeclared-elf-prerequisites
