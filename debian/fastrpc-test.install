@@ -1,0 +1,3 @@
+src/m4/build/usr/lib/fastrpc_test /usr/lib
+src/m4/build/usr/share /usr
+src/m4/fastrpc_test/usr/bin/fastrpc_test /usr/bin

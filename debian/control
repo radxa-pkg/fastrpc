@@ -100,13 +100,13 @@ Description: Facilitates efficient remote procedure calls - development files
  facilitates efficient remote procedure calls between the CPU and DSP for
  high-performance computing.
 
-Package: fastrpc-firmware
-Architecture: all
+Package: fastrpc-test
+Architecture: any
 Section: admin
 Priority: optional
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-Description: Facilitates efficient remote procedure calls - firmware files
+Description: Facilitates efficient remote procedure calls - test files
  This package provides the fastrpc, Qualcomm's userspace library that
  facilitates efficient remote procedure calls between the CPU and DSP for
  high-performance computing.
