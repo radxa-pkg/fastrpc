@@ -1,0 +1,9 @@
+# Upstream does not have man pages
+fastrpc-test: no-manual-page
+
+# This package includes DSP firmwares
+fastrpc-test: arch-dependent-file-in-usr-share
+fastrpc-test: binary-from-other-architecture
+fastrpc-test: hardening-no-relro
+fastrpc-test: library-not-linked-against-libc
+fastrpc-test: shared-library-lacks-stack-section

@@ -8,13 +8,14 @@ build-fastrpc: src/Makefile
 	cd src && $(MAKE)
 	mkdir -p src/m4/build
 	cd src && $(MAKE) DESTDIR=$(shell realpath ./src/m4/build) install
-	mkdir -p src/m4/dev/usr/lib
+	mkdir -p src/m4/dev/usr/lib src/m4/fastrpc_test/usr/bin
 	rm src/m4/build/usr/lib/*.la 
 	mv src/m4/build/usr/lib/*.so src/m4/dev/usr/lib
+	mv src/m4/build/usr/bin/fastrpc_test src/m4/fastrpc_test/usr/bin
 
 clean: clean-fastrpc
 
 .PHONY: clean-fastrpc
 clean-fastrpc: src/Makefile
 	cd src && $(MAKE) distclean
-	rm -rf src/m4/build src/m4/dev
+	rm -rf src/m4/build src/m4/dev src/m4/fastrpc_test
