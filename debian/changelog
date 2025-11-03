@@ -1,5 +1,9 @@
-fastrpc (1.0.0-1) UNRELEASED; urgency=medium
+fastrpc (1.0.0-1) unstable; urgency=medium
 
+  [ "Radxa Computer Co., Ltd" ]
   * Add initial Debian packaging support
 
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 01 Jan 1970 08:00:00 +0800
+  [ HE Zhengyu ]
+  * feat: add fastrpc-test and remove fastrpc-firmware
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 03 Nov 2025 04:01:31 +0000
