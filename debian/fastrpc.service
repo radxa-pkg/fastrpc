@@ -14,6 +14,8 @@ SOC=$(cat /sys/devices/soc0/soc_id); \
 MAC=$(cat /sys/firmware/devicetree/base/model); \
 if [ "$MAC" = "Radxa Dragon Q6A" ]; then \
     ln -sf /usr/share/qcom/qcs6490/radxa/dragon-q6a/dsp /usr/lib/dsp; \
+elif [ "$MAC" = "Radxa Dragon Q8B" ]; then \
+    ln -sf /usr/share/qcom/sc8280xp/radxa/dragon-q8b/dsp /usr/lib/dsp; \
 fi'
 
 [Install]
