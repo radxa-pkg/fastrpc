@@ -9,11 +9,11 @@ Build-Depends: debhelper (>=12~),
                dh-exec,
                pandoc,
                crossbuild-essential-arm64 [!arm64],
-               libc6:arm64 [!arm64],
-               libstdc++6:arm64 [!arm64],
-               pkg-config:arm64 [!arm64],
-               libyaml-dev:arm64 [!arm64],
-               libbsd-dev:arm64 [!arm64],
+               libc6:arm64,
+               libstdc++6:arm64,
+               pkg-config:arm64,
+               libyaml-dev:arm64,
+               libbsd-dev:arm64,
 
 Package: fastrpc
 Architecture: any
