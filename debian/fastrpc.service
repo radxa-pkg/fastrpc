@@ -9,8 +9,8 @@ Before=gdsp1rpcd.service
 Before=sdsprpcd.service
 
 [Service]
-ExecStart=/usr/share/fastrpc/bin/setup-dsp.sh
-RemainAfterExit=yes
+ExecStart=/usr/libexec/fastrpc/setup-dsp.sh
+Type=oneshot
 
 [Install]
 RequiredBy=adsprpcd_audiopd.service
