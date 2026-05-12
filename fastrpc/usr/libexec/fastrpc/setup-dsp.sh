@@ -5,6 +5,9 @@ rm -rf /usr/lib/dsp
 MAC=$(cat /sys/firmware/devicetree/base/model)
 
 case "$MAC" in
+    "Radxa CM-Q64 Raspberry Pi Compute Module 5 IO Board")
+        ln -sf /usr/share/qcom/qcs6490/radxa/cm-q64-rpi-cm5-io/dsp /usr/lib/dsp
+        ;;
     "Radxa Dragon Q6A")
         ln -sf /usr/share/qcom/qcs6490/radxa/dragon-q6a/dsp /usr/lib/dsp
         ;;
