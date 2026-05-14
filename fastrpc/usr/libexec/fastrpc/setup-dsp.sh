@@ -18,4 +18,10 @@ case "$MAC" in
         echo "$SOC" > /tmp/fake-soc0/soc_id
         mount --bind /tmp/fake-soc0/soc_id /sys/devices/soc0/soc_id
         ;;
+    "Radxa AIRbox Q900")
+        ln -sf /usr/share/qcom/qcs9075/radxa/airbox-q900/dsp /usr/lib/dsp
+        ;;
+    *)
+        echo "Unsupported board: $MAC"
+        ;;
 esac
