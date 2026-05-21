@@ -19,6 +19,7 @@ Package: fastrpc
 Architecture: any
 Section: admin
 Priority: optional
+Provides: qcom-fastrpc1
 Depends: libadsp-default-listener1,
          libadsprpc1,
          libcdsp-default-listener1,
@@ -102,6 +103,7 @@ Package: fastrpc-dev
 Architecture: any
 Section: admin
 Priority: optional
+Provides: qcom-fastrpc-dev
 Depends: ${misc:Depends},
          ${shlibs:Depends},
 Description: Facilitates efficient remote procedure calls - development files
