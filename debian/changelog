@@ -1,3 +1,15 @@
+fastrpc (1.0.5-2) unstable; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Update pkg.conf.template
+  * Update pkg.conf.template
+  * fix: pretend we are compatible with qcom packages
+
+  [ Jiali Chen ]
+  * fix: use the correct source path for  Radxa CM-Q64
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 21 May 2026 11:56:31 +0000
+
 fastrpc (1.0.5-1) unstable; urgency=medium
 
   [ ZHANG Yuntian ]
