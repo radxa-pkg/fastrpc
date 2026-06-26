@@ -1,4 +1,4 @@
-fastrpc (1.0.6-1) UNRELEASED; urgency=medium
+fastrpc (1.0.6-1) unstable; urgency=medium
 
   [ Chongbiao Chen ]
   * feat: Add radxa-airbox-q900 dsp link
@@ -7,7 +7,7 @@ fastrpc (1.0.6-1) UNRELEASED; urgency=medium
   [ ZHANG Yuntian ]
   * chore: update to 1.0.6
 
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 26 Jun 2026 19:30:08 +0800
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 26 Jun 2026 11:34:46 +0000
 
 fastrpc (1.0.5-2) unstable; urgency=medium
 
