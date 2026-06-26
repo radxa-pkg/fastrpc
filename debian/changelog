@@ -1,3 +1,14 @@
+fastrpc (1.0.6-1) UNRELEASED; urgency=medium
+
+  [ Chongbiao Chen ]
+  * feat: Add radxa-airbox-q900 dsp link
+  * feat: add Provides to debian/control to block ubuntu ppa qcom-fastrpc
+
+  [ ZHANG Yuntian ]
+  * chore: update to 1.0.6
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 26 Jun 2026 19:30:08 +0800
+
 fastrpc (1.0.5-2) unstable; urgency=medium
 
   [ ZHANG Yuntian ]
