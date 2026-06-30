@@ -1,3 +1,10 @@
+fastrpc (1.0.6-2) unstable; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * fix: prevent infinite bind mounts
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 30 Jun 2026 08:21:40 +0000
+
 fastrpc (1.0.6-1) unstable; urgency=medium
 
   [ Chongbiao Chen ]
