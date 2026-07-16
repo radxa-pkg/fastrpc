@@ -1,3 +1,10 @@
+fastrpc (1.0.6-3) unstable; urgency=medium
+
+  [ Chongbiao Chen ]
+  * fix: install cdsprpcd to /usr/sbin instead of /usr/bin
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 16 Jul 2026 02:56:21 +0000
+
 fastrpc (1.0.6-2) unstable; urgency=medium
 
   [ ZHANG Yuntian ]
