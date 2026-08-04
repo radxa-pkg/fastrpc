@@ -20,6 +20,8 @@ Architecture: any
 Section: admin
 Priority: optional
 Provides: qcom-fastrpc1 ( = 1:0.0.1-1)
+Replaces: qcom-fastrpc1
+Conflicts: qcom-fastrpc1
 Depends: libadsp-default-listener1,
          libadsprpc1,
          libcdsp-default-listener1,
@@ -104,6 +106,8 @@ Architecture: any
 Section: admin
 Priority: optional
 Provides: qcom-fastrpc-dev ( = 1:0.0.1-1)
+Replaces: qcom-fastrpc-dev
+Conflicts: qcom-fastrpc-dev
 Depends: ${misc:Depends},
          ${shlibs:Depends},
 Description: Facilitates efficient remote procedure calls - development files
