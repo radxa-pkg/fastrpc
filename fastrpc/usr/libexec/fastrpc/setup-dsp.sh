@@ -23,6 +23,9 @@ case "$MAC" in
     "Radxa AIRbox Q900")
         ln -sf /usr/share/qcom/qcs9075/radxa/airbox-q900/dsp /usr/lib/dsp
         ;;
+    "Radxa VMARC-Q9075 IO")
+        ln -sf /usr/share/qcom/qcs9075/radxa/vmarc-q9075-io/dsp /usr/lib/dsp
+        ;;
     *)
         echo "Unsupported board: $MAC"
         ;;
