@@ -19,7 +19,7 @@ Package: fastrpc
 Architecture: any
 Section: admin
 Priority: optional
-Provides: qcom-fastrpc1 ( = 1:0.0.1-1)
+Provides: qcom-fastrpc1 ( = 99:0.0.1-1)
 Replaces: qcom-fastrpc1
 Conflicts: qcom-fastrpc1
 Depends: libadsp-default-listener1,
@@ -105,7 +105,7 @@ Package: fastrpc-dev
 Architecture: any
 Section: admin
 Priority: optional
-Provides: qcom-fastrpc-dev ( = 1:0.0.1-1)
+Provides: qcom-fastrpc-dev ( = 99:0.0.1-1)
 Replaces: qcom-fastrpc-dev
 Conflicts: qcom-fastrpc-dev
 Depends: ${misc:Depends},
