@@ -2,7 +2,7 @@ CUSTOM_DEBUILD_ARG := -aarm64 -Pcross
 
 main_build: build-fastrpc
 
-src/Makefile:
+src/Makefile: src/Makefile.am
 	cd src && GITCOMPILE_NO_MAKE=1 ./gitcompile --prefix=/usr --host=aarch64-linux-gnu
 
 .PHONY: build-fastrpc
