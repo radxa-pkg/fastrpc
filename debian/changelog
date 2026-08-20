@@ -1,4 +1,4 @@
-fastrpc (1.0.7-1) UNRELEASED; urgency=medium
+fastrpc (1.0.7-1) unstable; urgency=medium
 
   [ Chongbiao Chen ]
   * feat: add Conflicts/Replaces for qcom-fastrpc1
@@ -9,8 +9,9 @@ fastrpc (1.0.7-1) UNRELEASED; urgency=medium
   [ ZHANG Yuntian ]
   * fix: workaround qcom PPA epoch
   * chore: bump version to 1.0.7
+  * fix: add Makefile dependency
 
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 20 Aug 2026 06:07:45 +0000
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 20 Aug 2026 06:34:27 +0000
 
 fastrpc (1.0.6-3) unstable; urgency=medium
 
