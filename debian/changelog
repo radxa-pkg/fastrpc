@@ -1,3 +1,10 @@
+fastrpc (1.0.7-2) unstable; urgency=medium
+
+  [ Chongbiao Chen ]
+  * feat: change Q8B soc_id from 498 to 460 for 4MB vtcm
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 02 Sep 2026 10:41:51 +0000
+
 fastrpc (1.0.7-1) unstable; urgency=medium
 
   [ Chongbiao Chen ]
