@@ -13,7 +13,7 @@ case "$MAC" in
         ;;
     "Radxa Dragon Q8B")
         ln -sf /usr/share/qcom/sc8280xp/radxa/dragon-q8b/dsp /usr/lib/dsp
-        SOC=498
+        SOC=460
         if [[ ! -f /tmp/fake-soc0/soc_id ]]; then
             mkdir -p /tmp/fake-soc0
             echo "$SOC" > /tmp/fake-soc0/soc_id
