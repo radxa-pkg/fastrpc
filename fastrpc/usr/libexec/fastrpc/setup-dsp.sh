@@ -29,6 +29,15 @@ case "$MAC" in
             mount --bind /tmp/fake-soc0/soc_id /sys/devices/soc0/soc_id
         fi
         ;;
+    "Radxa DragonStation 6")
+        ln -sf /usr/share/qcom/sc8280xp/radxa/dragonstation-6/dsp /usr/lib/dsp
+        SOC=460
+        if [[ ! -f /tmp/fake-soc0/soc_id ]]; then
+            mkdir -p /tmp/fake-soc0
+            echo "$SOC" > /tmp/fake-soc0/soc_id
+            mount --bind /tmp/fake-soc0/soc_id /sys/devices/soc0/soc_id
+        fi
+        ;;
     "Radxa AIRbox Q900")
         ln -sf /usr/share/qcom/qcs9075/radxa/airbox-q900/dsp /usr/lib/dsp
         ;;
