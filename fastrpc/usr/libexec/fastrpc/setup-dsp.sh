@@ -1,5 +1,15 @@
 #!/bin/bash
 
+setup_soc_id()
+{
+    local SOC="$1"
+    if [[ ! -f /tmp/fake-soc0/soc_id ]]; then
+        mkdir -p /tmp/fake-soc0
+        echo "$SOC" > /tmp/fake-soc0/soc_id
+        mount --bind /tmp/fake-soc0/soc_id /sys/devices/soc0/soc_id
+    fi
+}
+
 rm -rf /usr/lib/dsp
 
 MAC=$(cat /sys/firmware/devicetree/base/model)
@@ -13,30 +23,15 @@ case "$MAC" in
         ;;
     "Radxa Dragon Q8B")
         ln -sf /usr/share/qcom/sc8280xp/radxa/dragon-q8b/dsp /usr/lib/dsp
-        SOC=460
-        if [[ ! -f /tmp/fake-soc0/soc_id ]]; then
-            mkdir -p /tmp/fake-soc0
-            echo "$SOC" > /tmp/fake-soc0/soc_id
-            mount --bind /tmp/fake-soc0/soc_id /sys/devices/soc0/soc_id
-        fi
+        setup_soc_id 460
         ;;
     "Radxa DragonBay 4 Pro")
         ln -sf /usr/share/qcom/sc8280xp/radxa/dragonbay-4-pro/dsp /usr/lib/dsp
-        SOC=460
-        if [[ ! -f /tmp/fake-soc0/soc_id ]]; then
-            mkdir -p /tmp/fake-soc0
-            echo "$SOC" > /tmp/fake-soc0/soc_id
-            mount --bind /tmp/fake-soc0/soc_id /sys/devices/soc0/soc_id
-        fi
+        setup_soc_id 460
         ;;
     "Radxa DragonStation 6")
         ln -sf /usr/share/qcom/sc8280xp/radxa/dragonstation-6/dsp /usr/lib/dsp
-        SOC=460
-        if [[ ! -f /tmp/fake-soc0/soc_id ]]; then
-            mkdir -p /tmp/fake-soc0
-            echo "$SOC" > /tmp/fake-soc0/soc_id
-            mount --bind /tmp/fake-soc0/soc_id /sys/devices/soc0/soc_id
-        fi
+        setup_soc_id 460
         ;;
     "Radxa AIRbox Q900")
         ln -sf /usr/share/qcom/qcs9075/radxa/airbox-q900/dsp /usr/lib/dsp
