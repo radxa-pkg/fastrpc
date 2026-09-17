@@ -1,3 +1,15 @@
+fastrpc (1.0.7-3) unstable; urgency=medium
+
+  [ Stephen Chen ]
+  * feat: Add Radxa DragonBay 4 Pro
+  * feat: Add Radxa DragonStation 6
+  * fix: add setup_soc_id helper
+
+  [ Jiali Chen ]
+  * feat: add radxa-dragon-q6b dsp link
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 17 Sep 2026 08:38:02 +0000
+
 fastrpc (1.0.7-2) unstable; urgency=medium
 
   [ Chongbiao Chen ]
