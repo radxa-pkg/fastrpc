@@ -11,6 +11,9 @@ case "$MAC" in
     "Radxa Dragon Q6A")
         ln -sf /usr/share/qcom/qcs6490/radxa/dragon-q6a/dsp /usr/lib/dsp
         ;;
+    "Radxa Dragon Q6B")
+        ln -sf /usr/share/qcom/qcs6490/radxa/dragon-q6b/dsp /usr/lib/dsp
+        ;;
     "Radxa Dragon Q8B")
         ln -sf /usr/share/qcom/sc8280xp/radxa/dragon-q8b/dsp /usr/lib/dsp
         SOC=498
