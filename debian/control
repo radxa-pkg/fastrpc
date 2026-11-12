@@ -19,9 +19,12 @@ Package: fastrpc
 Architecture: any
 Section: admin
 Priority: optional
-Provides: qcom-fastrpc1 ( = 99:0.0.1-1)
-Replaces: qcom-fastrpc1
-Conflicts: qcom-fastrpc1
+Provides: qcom-fastrpc1 ( = 99:0.0.1-1),
+          libfastrpc1 (= 99:0.0.1-1)
+Replaces: qcom-fastrpc1,
+          libfastrpc1
+Conflicts: qcom-fastrpc1,
+           libfastrpc1
 Depends: libadsp-default-listener1,
          libadsprpc1,
          libcdsp-default-listener1,
