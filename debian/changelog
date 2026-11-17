@@ -1,4 +1,4 @@
-fastrpc (1.0.9-1) UNRELEASED; urgency=medium
+fastrpc (1.0.9-1) unstable; urgency=medium
 
   [ Chongbiao Chen ]
   * fix: provide and replace Ubuntu libfastrpc1
@@ -6,7 +6,7 @@ fastrpc (1.0.9-1) UNRELEASED; urgency=medium
   [ ZHANG Yuntian ]
   * chore: update to 1.0.9
 
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 17 Nov 2026 09:28:17 +0000
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 17 Nov 2026 09:33:17 +0000
 
 fastrpc (1.0.7-3) unstable; urgency=medium
 
